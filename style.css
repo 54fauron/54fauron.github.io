@@ -1,0 +1,188 @@
+/* Generell styling */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.article-container {
+    max-width: 100%;
+}
+
+/* Header og Toppbilde */
+.main-header {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: white;
+    font-family: 'Old English Text MT', serif; /* Simulerer avisa sin logo-font */
+    font-size: clamp(1.5rem, 5vw, 2.8rem);
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    z-index: 10;
+    text-decoration: none;
+}
+
+.photo-credit {
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+    margin: 5px 20px;
+}
+
+/* Innholdsområde */
+.content-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.headline {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.1;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-weight: 900;
+}
+
+.lead-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+/* Meta-info (Forfatter/Dato) */
+.meta-section {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+.author a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.dates span {
+    display: block;
+    text-align: right;
+}
+
+.copy-btn {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Pluss-merke */
+.subscriber-badge {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.plus-icon {
+    background: #2a5d9a; /* Drammens Tidende blåfarge */
+    color: white;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* Artikkeltekst og bilder */
+.article-body p {
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.article-image {
+    margin: 30px 0;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+}
+
+.article-image figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+    line-height: 1.4;
+    border-left: 3px solid #2a5d9a;
+    padding-left: 10px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 22px !important;
+    border-left: 4px solid #ddd;
+    padding-left: 20px;
+    margin: 30px 0;
+    color: #444 !important;
+}
+
+/* Mobil-tilpasning */
+@media (max-width: 600px) {
+    .headline {
+        font-size: 30px;
+    }
+    .lead-text {
+        font-size: 20px;
+    }
+    .meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dates span {
+        text-align: left;
+    }
+}
